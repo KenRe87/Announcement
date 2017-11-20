@@ -1,0 +1,182 @@
+body, html{ 
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+  background-color: #E6E6FA;
+  }
+#parentdiv {
+  display:flex;
+  flex-wrap:wrap;
+}
+.babydiv{
+  margin:20px;
+}
+
+
+#one{
+  background-color:pink;
+  width:1200px;
+  height:375px;
+  text-align: center;
+  
+}
+#two{
+  background-color:white;
+  width:1200px;
+  height:280px;
+  text-align:center;
+  flex-wrap: wrap;
+}
+#three{
+  background-color:pink;
+  width:1200px;
+  height:400px;
+  text-align:center;
+  flex-wrap: wrap;
+}
+#four{
+  background-color:white;
+  width:1200px;
+  height:400px;
+  text-align:center;
+  flex-wrap: wrap;
+  }
+
+
+
+
+
+/*Navigation bar*/
+ul li{
+      display: inline;
+    }
+ul {
+      background-color:#E6E6FA;
+    }
+    li a{
+      display:inline-block;
+      color:black;
+      text-align:justify;
+      padding:12px 16px;
+      text-decoration:none;
+    }
+    
+    li a:hover,.dropdown:hover{
+      background-color:#ff69b4;
+      /*this is where you go to change the color (highlight)of the boxes as your cursor over them*/
+    }.dropdown {
+      display:inline-block;
+    }
+    .content{
+      display:none;
+      position:absolute;
+      background-color:#E6E6FA;
+      min-width:60px;
+      /*below is where your box-shadow is at.Kindly go fetch the rgba code for pink*/
+      box-shadow:0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    .content a:hover{
+      background-color:pink;
+    }
+    .dropdown:hover .content{
+      display:block;
+    }
+    
+    /*this is where your heading and parapgraph styles live.*/
+/**/    p {
+      padding:px 24px;
+      margin:0;
+      font-weight:bold;
+      
+    }
+/*Character Gallery*/
+div.gallery {
+    margin: 35px;
+    border: 1px solid #ccc;
+    float: center;
+    width: 150px;
+    background-color:pink;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 90%;
+    height: auto;
+}
+
+div.desc {
+    padding: 10px;
+    text-align: center;
+}
+/*The Writer Gallery*/
+div.gallery2 {
+    margin: 12px;
+    float: left;
+    width: 150px;
+}
+
+div.gallery2:hover {
+    color:magenta;
+}
+/*when you hover over her name, it turns blue. I should hyoerlink this but I'm tired.*/
+div.gallery2 img {
+    width: 90%;
+    height: auto;
+}
+
+div.desc2 {
+    padding: 15px;
+    text-align: left;
+}
+div.headerImage{
+  height:600px;
+  width:600px;
+  margin:80px;
+}
+#parentdiv2 {
+  display:flex;
+  flex-wrap:wrap;
+}
+.babydiv2{
+  margin:20px;
+}
+#footer {
+  background-color:pink;
+  width:1600px;
+  height:40px;
+  font-size: 40px
+}
+.modalDialog {
+  position:fixed;
+  font-family:'Montserrat',sans-serif;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  background:rgba(0,0,0,0.8);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition:opacity 400ms ease-in;
+  -moz-transition:opacity 400ms ease-in;
+  transition:opacity 400ms ease-in;
+  pointer-events:none;
+}
+.modalDialog:target {
+  opacity:1;
+  pointer-events:auto;
+}
+.modalDialog > div {
+  width:900px;
+  position:relative;
+  margin: 10% auto;
+  padding: 5px 20px 31px 20px;
+  border-radius: 10px;
+  background: #fff;
+  background:-moz-linear-gradient(#fff,#999);
+  background:-webkit-linear-gradient(#fff,#999);
+  background:-o-linear-gradient((#fff,#999);
+  }
